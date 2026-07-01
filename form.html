@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <center>
         <title>Product Form</title>
     </head>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+    </style>
     <body>
-        <h1>Product Details</h1>
         <div>
-        <form method="/post" enctype="multipart/form-data">
+            <table><center>
+                <h1>Product Details</h1>
+            </center></table>
+        <form method="post" enctype="multipart/form-data">
             <table>
+                <center>
                 <tr>
-                    <td><label for="productid">Product id:</label></td>
+                    <td><label for="productid">Product id</label></td>
                     <td><input type="text" id="productid" name="productid"></td>
                 </tr>
                 <tr>
-                    <td><label for="productname">Product name:</label></td>
+                    <td><label for="productname">Product name</label></td>
                     <td><input type="text" id="productname" name="productname"></td>
                 </tr>
                 <tr>
-                    <td><label for="category">Category:</label></td>
+                    <td><label for="category">Category</label></td>
                     <td><select>
                         <option>enter category</option>
                         <option>vegetables</option>
@@ -26,7 +35,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <label for="manufacturingDate">Manufacturing Date:</label>
+                        <label for="manufacturingDate">Manufacturing Date</label>
                     </td>
                     <td>
                         <input type="date" id="manufacturingDate" name="manufacturingDate">
@@ -34,13 +43,13 @@
                 </tr>
                 <tr>
                     <td>
-                        <label for="expiry">Expiry Date:</label>
+                        <label for="expiry">Expiry Date</label>
                     </td>
                     <td><input type="date" id="expiry" name="expiry"></td>
                 </tr>
                 <tr>
                     <td>
-                        <label for="productQuantity">Product Quantity:</label>
+                        <label for="productQuantity">Product Quantity</label>
                     </td>
                     <td>
                         <select name="productQuantity">
@@ -53,23 +62,28 @@
                 </tr>
                 <tr>
                     <td>
-                        <label for="image">Product Image:</label>
+                        <label for="image">Product Image</label>
                     </td>
                     <td><input type="file" id="image" name="image"></td>
                 </tr>
                 <tr>
                     <td>
-                        <lable for="contact"> contact</lable>
+                        <label for="contact">Help Line</label>
                     </td>
                     <td>
-                        <input type="email" id="contact" name="contact"/>
-                    </td>
+                    <input type="number"
+                        name="sample-text"
+                        id="contact"
+                        pattern="[0-9]{10}"
+                        required/>
+                        </td>
                 </tr>
                 <tr>
                     <td>
-                        <button type="submit">submit</button>
+                        <button style="background-color: blue; color: white;" type="submit">submit</button>
                     </td>
                 </tr>
+                   </center>
                 </table>
             </form>
         </div>
