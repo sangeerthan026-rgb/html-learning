@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#111;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.4);
+}
+
+.float{
+    animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-20px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+.zoom{
+    animation:zoom 2s infinite alternate;
+}
+
+@keyframes zoom{
+
+    from{
+        transform:scale(1);
+    }
+
+    to{
+        transform:scale(1.15);
+    }
+
+}
+
+.rotate{
+    animation:rotateImage 5s linear infinite;
+}
+
+@keyframes rotateImage{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+
+.fade{
+    animation:fadeIn 3s infinite alternate;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:.3;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+.slide-left{
+    animation:slideLeft 3s infinite alternate;
+}
+
+@keyframes slideLeft{
+
+    from{
+        transform:translateX(-30px);
+    }
+
+    to{
+        transform:translateX(30px);
+    }
+
+}
